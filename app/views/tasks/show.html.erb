@@ -1,0 +1,5 @@
+<h1>Task <%= @task.id %></h1>
+<h3><%= @task.title %></h3>
+<p><%= @task.details %></p>
+<h4><%= link_to "Edit this task", edit_path(@task.id), class: 'btn btn-dark' %></h4>
+<h4><%= link_to "Back to the list", tasks_path, class: 'btn btn-warning' %></h4>
